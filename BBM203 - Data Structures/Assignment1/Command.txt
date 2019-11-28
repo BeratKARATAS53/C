@@ -1,0 +1,6 @@
+cd C:\Users\Berat\OneDrive\Masaüstü\C\Assignment1
+gcc Arguments.c -o main
+Arguments.exe 18x18 3 Map.txt Key.txt
+Arguments.exe 12x18 3 Map2.txt Key2.txt
+Arguments.exe 18x18 3 Map3.txt Key3.txt
+Arguments.exe 15x20 5 Map4.txt Key4.txt
