@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1544005625 source:c:\users\berat\onedrive\masaüstü\c\assignment3\main.cpp
+	<iostream>
+	<fstream>
+	<sstream>
+	<string>
+	<algorithm>
+
