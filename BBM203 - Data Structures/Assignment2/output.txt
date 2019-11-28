@@ -1,0 +1,74 @@
+---------------------------------------------------------------------------------------
+Command: MESSAGE C E #A few small hops for frames, but a giant leap for this message.#
+---------------------------------------------------------------------------------------
+Message to be sent: A few small hops for frames, but a giant leap for this message.
+
+Frame #1
+Sender MAC address: CCCCCCCCCC, Receiver MAC address: CCCCCCCCCC
+Sender IP address: Ð;z, Receiver IP address: À
+Sender port number: 1, Receiver port number: 2
+Sender ID: C, Receiver ID: E
+Message chunk carried: A few small hops for
+--------
+Frame #2
+Sender MAC address: CCCCCCCCCC, Receiver MAC address: CCCCCCCCCC
+Sender IP address: Ð;z, Receiver IP address: À
+Sender port number: 1, Receiver port number: 2
+Sender ID: C, Receiver ID: E
+Message chunk carried:  frames, but a giant
+--------
+Frame #3
+Sender MAC address: CCCCCCCCCC, Receiver MAC address: CCCCCCCCCC
+Sender IP address: Ð;z, Receiver IP address: À
+Sender port number: 1, Receiver port number: 2
+Sender ID: C, Receiver ID: E
+Message chunk carried:  leap for this messa
+--------
+Frame #4
+Sender MAC address: CCCCCCCCCC, Receiver MAC address: CCCCCCCCCC
+Sender IP address: Ð;z, Receiver IP address: À
+Sender port number: 1, Receiver port number: 2
+Sender ID: C, Receiver ID: E
+Message chunk carried: ge.
+--------
+-----------------------------------------
+Command: SHOW_FRAME_INFO C out 3
+---------------------------------
+---------------------------------
+Command: SHOW_Q_INFO C out
+---------------------------------
+Client C Outgoing Queue Status
+Current total number of frames: 4
+---------------------------------
+Command: SHOW_Q_INFO C in
+---------------------------------
+Client C Incoming Queue Status
+Current total number of frames: 4
+---------------------------------
+Command: SHOW_FRAME_INFO C in 5
+---------------------------------
+---------------------------------
+Command: SEND C
+---------------------------------
+A message received by client C, but intended for client E. Forwarding...
+Frame #1 MAC address change: New sender MAC CCCCCCCCCC, new receiver MAC EEEEEEEEEE
+Frame #2 MAC address change: New sender MAC CCCCCCCCCC, new receiver MAC EEEEEEEEEE
+Frame #3 MAC address change: New sender MAC CCCCCCCCCC, new receiver MAC EEEEEEEEEE
+Frame #4 MAC address change: New sender MAC CCCCCCCCCC, new receiver MAC EEEEEEEEEE
+A message received by client C, but intended for client E. Forwarding...
+Frame #1 MAC address change: New sender MAC CCCCCCCCCC, new receiver MAC EEEEEEEEEE
+Frame #2 MAC address change: New sender MAC CCCCCCCCCC, new receiver MAC EEEEEEEEEE
+Frame #3 MAC address change: New sender MAC CCCCCCCCCC, new receiver MAC EEEEEEEEEE
+Frame #4 MAC address change: New sender MAC CCCCCCCCCC, new receiver MAC EEEEEEEEEE
+A message received by client C, but intended for client E. Forwarding...
+Frame #1 MAC address change: New sender MAC CCCCCCCCCC, new receiver MAC EEEEEEEEEE
+Frame #2 MAC address change: New sender MAC CCCCCCCCCC, new receiver MAC EEEEEEEEEE
+Frame #3 MAC address change: New sender MAC CCCCCCCCCC, new receiver MAC EEEEEEEEEE
+Frame #4 MAC address change: New sender MAC CCCCCCCCCC, new receiver MAC EEEEEEEEEE
+---------------------------------
+Command: PRINT_LOG D
+---------------------------------
+---------------------------------
+Command: ORDER pizza
+---------------------------------
+Invalid command.
